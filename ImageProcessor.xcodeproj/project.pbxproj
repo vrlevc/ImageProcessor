@@ -10,6 +10,7 @@
 		5474D5F8215D126A001EE1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474D5F7215D126A001EE1C1 /* AppDelegate.swift */; };
 		5474D5FA215D126B001EE1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5474D5F9215D126B001EE1C1 /* Assets.xcassets */; };
 		5474D5FD215D126B001EE1C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5474D5FB215D126B001EE1C1 /* MainMenu.xib */; };
+		54B2C199215D178300AFD480 /* ImageIO_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C198215D178300AFD480 /* ImageIO_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +20,20 @@
 		5474D5FC215D126B001EE1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5474D5FE215D126B001EE1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5474D5FF215D126B001EE1C1 /* ImageProcessor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageProcessor.entitlements; sourceTree = "<group>"; };
+		54B2C196215D178300AFD480 /* ImageIO_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageIO_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B2C198215D178300AFD480 /* ImageIO_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIO_Tests.swift; sourceTree = "<group>"; };
+		54B2C19A215D178300AFD480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5474D5F1215D126A001EE1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54B2C193215D178300AFD480 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				5474D5F6215D126A001EE1C1 /* ImageProcessor */,
+				54B2C197215D178300AFD480 /* ImageIO_Tests */,
 				5474D5F5215D126A001EE1C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				5474D5F4215D126A001EE1C1 /* ImageProcessor.app */,
+				54B2C196215D178300AFD480 /* ImageIO_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +71,15 @@
 				5474D5FF215D126B001EE1C1 /* ImageProcessor.entitlements */,
 			);
 			path = ImageProcessor;
+			sourceTree = "<group>";
+		};
+		54B2C197215D178300AFD480 /* ImageIO_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C198215D178300AFD480 /* ImageIO_Tests.swift */,
+				54B2C19A215D178300AFD480 /* Info.plist */,
+			);
+			path = ImageIO_Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +102,23 @@
 			productReference = 5474D5F4215D126A001EE1C1 /* ImageProcessor.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54B2C195215D178300AFD480 /* ImageIO_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54B2C19D215D178300AFD480 /* Build configuration list for PBXNativeTarget "ImageIO_Tests" */;
+			buildPhases = (
+				54B2C192215D178300AFD480 /* Sources */,
+				54B2C193215D178300AFD480 /* Frameworks */,
+				54B2C194215D178300AFD480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageIO_Tests;
+			productName = ImageIO_Tests;
+			productReference = 54B2C196215D178300AFD480 /* ImageIO_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -91,6 +130,9 @@
 				ORGANIZATIONNAME = LVA;
 				TargetAttributes = {
 					5474D5F3215D126A001EE1C1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					54B2C195215D178300AFD480 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -109,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				5474D5F3215D126A001EE1C1 /* ImageProcessor */,
+				54B2C195215D178300AFD480 /* ImageIO_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +166,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54B2C194215D178300AFD480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,6 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5474D5F8215D126A001EE1C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54B2C192215D178300AFD480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B2C199215D178300AFD480 /* ImageIO_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +357,42 @@
 			};
 			name = Release;
 		};
+		54B2C19B215D178300AFD480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = ImageIO_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lva.com.ImageIO-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		54B2C19C215D178300AFD480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = ImageIO_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lva.com.ImageIO-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +410,15 @@
 			buildConfigurations = (
 				5474D603215D126B001EE1C1 /* Debug */,
 				5474D604215D126B001EE1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54B2C19D215D178300AFD480 /* Build configuration list for PBXNativeTarget "ImageIO_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54B2C19B215D178300AFD480 /* Debug */,
+				54B2C19C215D178300AFD480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
