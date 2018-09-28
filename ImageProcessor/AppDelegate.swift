@@ -11,9 +11,16 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+	// MARK: -
+	
 	@IBOutlet weak var window: NSWindow!
 
-
+	// MARK: - Image Processor
+	
+	
+	
+	// MARK: - NSApplicationDelegate
+	
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		// Insert code here to initialize your application
 	}

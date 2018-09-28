@@ -76,8 +76,8 @@
 		54B2C197215D178300AFD480 /* ImageIO_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				54B2C198215D178300AFD480 /* ImageIO_Tests.swift */,
 				54B2C19A215D178300AFD480 /* Info.plist */,
+				54B2C198215D178300AFD480 /* ImageIO_Tests.swift */,
 			);
 			path = ImageIO_Tests;
 			sourceTree = "<group>";
