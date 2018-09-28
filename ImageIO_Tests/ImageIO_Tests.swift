@@ -92,7 +92,7 @@ class ImageIO_Tests: XCTestCase {
 			NSLog( " >>> CGImageSourceGetCount : \(count)" )
 			
 			// go through all images in source:
-			for index in 0..<count {
+			for index in 0..<count { 
 				let image = CGImageSourceCreateImageAtIndex(source!, index, nil)
 				XCTAssertNotNil(image)
 				// Get some image attributes:
