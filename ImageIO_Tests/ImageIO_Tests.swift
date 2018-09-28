@@ -95,6 +95,11 @@ class ImageIO_Tests: XCTestCase {
 			for index in 0..<count {
 				let image = CGImageSourceCreateImageAtIndex(source!, index, nil)
 				XCTAssertNotNil(image)
+				// Get some image attributes:
+				NSLog(" >>> Image width:\(image?.width) height:\(image?.height)")
+				
+				// Create image thumb
+				
 			}
 		}
 	}
