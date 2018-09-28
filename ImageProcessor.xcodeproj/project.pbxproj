@@ -23,6 +23,7 @@
 		54B2C196215D178300AFD480 /* ImageIO_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageIO_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B2C198215D178300AFD480 /* ImageIO_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIO_Tests.swift; sourceTree = "<group>"; };
 		54B2C19A215D178300AFD480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B2C1A6215E653700AFD480 /* TestMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestMedia; path = ImageIO_Tests/TestMedia; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		5474D5EB215D126A001EE1C1 = {
 			isa = PBXGroup;
 			children = (
+				54B2C1A6215E653700AFD480 /* TestMedia */,
 				5474D5F6215D126A001EE1C1 /* ImageProcessor */,
 				54B2C197215D178300AFD480 /* ImageIO_Tests */,
 				5474D5F5215D126A001EE1C1 /* Products */,
