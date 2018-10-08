@@ -53,7 +53,10 @@ class ImageIO_Tests: XCTestCase {
 		let path = fm.currentDirectoryPath
 		NSLog( " >>> Current Dir Path : \(fm.currentDirectoryPath)" )
 		
-		let media = search(subFolder: mediaFolder, startingFromPath: path, by:fm, silent:false)
+		// Use Env variable ->  MEDIA_FOLDER : /Users/vitya/DevProjects/ImageProcessor
+		let envMediaFolder = ProcessInfo.processInfo.environment["MEDIA_FOLDER"]
+		
+		let media = search(subFolder: mediaFolder, startingFromPath: envMediaFolder ?? path, by:fm, silent:false)
 		XCTAssert( FileManager.default.fileExists(atPath: media ?? "") )
 	}
 	
@@ -96,7 +99,7 @@ class ImageIO_Tests: XCTestCase {
 				let image = CGImageSourceCreateImageAtIndex(source!, index, nil)
 				XCTAssertNotNil(image)
 				// Get some image attributes:
-				NSLog(" >>> Image width:\(image?.width) height:\(image?.height)")
+				NSLog(" >>> Image width:\(image?.width ?? -1) height:\(image?.height ?? -1)")
 				
 				// Create image thumb
 				
