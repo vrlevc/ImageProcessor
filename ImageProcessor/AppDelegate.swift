@@ -23,6 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		// Insert code here to initialize your application
+		let isUnitTesting = ProcessInfo.processInfo.environment["IS_UNIT_TESTING"] == "1"
+		if isUnitTesting {
+			// init for unit testing - might skip something ...
+		}
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
